@@ -1,0 +1,162 @@
+<span id="main">
+    <header class="netflix-logo">
+        <div class="netflix-header">
+            <img src="/assets/imgh/logo.png" alt="Netflix Logo">
+            <button class="btn btn-rounded" routerLink="login">Entrar</button>
+        </div>
+        <div class="netflix-content">
+            <h1>Filmes ilimitados, TV <br> shows e mais.</h1>
+            <p class="p-top">Assista em qualquer lugar. Cancele a qualquer momento.</p>
+            <p class="p-bot">Pronto para assistir? Digite seu e-mail para criar ou reiniciar sua associação.</p>
+            <div class="get-started">
+                <input class="boxHolder" type="text" placeholder="Endereço de email">
+                <div class="gs">
+                <button type="button" class="get-started-button" routerLink="login">Iniciar</button>
+
+                <i class="fa fa-angle-right"></i>
+            </div> 
+            </div>
+        </div>
+    </header>
+    <hr>
+    </span>
+      <div class="final closed" id="final">
+          <div class="buttons">
+            <button class="btn transparent" id="sign-out-btn">Sair</button>
+        </div>
+            <div class="submit">
+         <form action="">
+             <p>Entrar</p>
+             <input type="text" id="email" placeholder="Email" required>
+             <input type="text" id="psw" placeholder="Password" title="Deve conter pelo menos um número, uma letra maiúscula, minúscula e pelo menos 8 ou mais caracteres." required>
+             <button id="submit">Entrar</button>
+         </form>
+        </div>
+         <p id="thank-you"></p>
+        </div>      
+        <hr>
+    <section class="kids">
+        <div class="container">
+            <div class="left-part">
+                <img src="/assets/imgh/kids.jpg" alt="Kids Logo">
+            </div>
+            <div class="right-part">
+                <h1>Crie perfis para crianças.</h1>
+                <p>Envie as crianças em aventuras com seus personagens favoritos em um espaço feito para eles - grátis com sua assinatura.</p>
+            </div>
+        </div>
+    </section>
+    <hr>
+    <section class="enjoy">
+        <div class="enjoy-text">
+            <h1>Divirta-se na sua TV.</h1>
+            <p>Assista em smart TVs, Playstation,
+                Xbox, Chromecast, Apple TV, Blu-ray
+                jogadores e muito mais.</p>
+        </div>
+            <div class="enjoy-img">
+                <img src="/assets/imgh/tv11.gif" alt="TV Image">
+                <div class="enjoy-video">
+                    <a href="/assets/imgh/video-tv2.m4v" class="video-link">Assista ao vídeo</a>
+                </div>
+            </div>
+    </section>
+    <hr>
+    <section class="download">
+        <div class="mobile">
+            <img class="mobile-img" src="/assets/imgh/mobile.jpg" alt="Downloads">
+            <div class="box">
+                <div>
+                    <img src="/assets/imgh/boxshot.png" alt="BoxShot">
+                </div>
+                <div>
+                    <h2>Stranger Things</h2>
+                    <p>Downloading...</p>
+                </div>
+                <div>
+                    <img class="gif" src="/assets/imgh/gif.gif" alt="Download Gif">
+                </div>
+            </div>
+        </div>
+        <div class="download-content">
+            <h1>Baixe seus programas para assistir offline.</h1>
+            <p>Salve seus favoritos facilmente e tenha sempre algo para assistir.</p>
+        </div>
+    </section>
+
+    <hr>
+
+    <section class="stream">
+        <div class="stream-content">
+            <h1>Assista em qualquer lugar.</h1>
+            <p>Transmita filmes e programas de TV ilimitados
+                no seu telefone, tablet, laptop,
+                e televisão.</p>
+        </div>
+            <div class="mac">
+                <img class="tv-mac" src="/assets/imgh/tv12.gif" alt="Mac">
+                <div class="tv-2">
+                    <video src="/assets/imgh/video-tv2.m4v" autoplay muted loop playsinline></video>
+                    
+                </div>
+            </div>
+    </section>
+
+    <hr>
+
+    <div>
+        <section class="freq">
+            <h1>Perguntas frequentes</h1>
+            <div class="questions">
+              <div *ngFor="let faq of faqs; let i = index">
+                <button type="button" (click)="toggle(i)">
+                  {{ faq.question }} <span>{{ faq.expanded ? '-' : '+' }}</span>
+                </button>
+                <div [class.closed]="!faq.expanded" [class.open]="faq.expanded" class="faq-answer">
+                  <span>{{ faq.answer }}</span>
+                </div>
+              </div>
+            </div>
+            <p class="p-b">Quer assistir? Informe seu email para criar ou reiniciar sua assinatura.</p>
+            <div class="get-started sec">
+              <input type="text" placeholder="Email">
+              <div class="gs">
+                <button type="button" class="get-started-button" routerLink="login">Iniciar</button>
+                <i class="fa fa-angle-right"></i>
+              </div>
+            </div>
+        </section>
+    </div>
+    <hr>
+    <footer class="footer">
+        <p>Dúvidas? Ligue 0800 591 8942</p>
+        <div class="footer-column">
+             <ul>
+                <li><a href="#">FAQ</a></li>
+                <li><a href="#">Investor Relations</a></li>
+                <li><a href="#">Privacy</a></li>
+                <li><a href="#">Speed Test</a></li>            
+            </ul>
+            <ul>
+                <li><a href="#">Help Centre</a></li>
+                <li><a href="#">Jobs</a></li>
+                <li><a href="#">Cookie Preferences</a></li>
+                <li><a href="#">Legal Notices</a></li>            
+            </ul>
+             <ul>
+                <li><a href="#">Account</a></li>
+                <li><a href="#">Ways to watch</a></li>
+                <li><a href="#">Corporate Information</a></li>
+                <li><a href="#">Netflix Originals</a></li>            
+            </ul>
+             <ul>
+                <li><a href="#">Media Centre</a></li>
+                <li><a href="#">Terms of use</a></li>
+                <li><a href="#">Contact US</a></li>            
+            </ul>
+        </div>
+    </footer>
+
+
+
+    
